@@ -1,0 +1,99 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 10px;
+  border: 1px dashed red;
+}
+
+body {
+  background-color: $background;
+  line-height: 1.5em;
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    line-height: 2em;
+  }
+  .burger {
+    background-color: black;
+    font-size: 4em;
+    border-radius: 50%;
+    padding: 10px 5px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .flexbox {
+    display: flex;
+    height: 85vh;
+    .first {
+      width: 30%;
+      h2 {
+        color: $colorh;
+      }
+      .content1 {
+        gap: 2em;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        color: white;
+        height: 93%;
+      }
+    }
+    .second {
+      width: 30%;
+      h2 {
+        color: $colorh;
+      }
+      .content2 {
+        gap: 4em;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        height: 93%;
+      }
+    }
+    .third {
+      width: 30%;
+      .content3 {
+        background-color: black;
+        color: orange;
+        height: 93%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .play {
+        line-height: 65vh;
+        color: white;
+        font-size: 15em;
+        text-align: center;
+      }
+    }
+    h3 {
+      color: $colorh;
+    }
+  }
+}
+@media (max-width: 800px) {
+  body {
+    padding-top: 100px;
+    .flexbox {
+      flex-direction: column;
+      .first,
+      .second,
+      .third {
+        width: 100%;
+      }
+    }
+  }
+}

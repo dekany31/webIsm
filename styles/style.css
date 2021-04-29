@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 10px;
+  border: 1px dashed red;
+}
+
+body {
+  background-color: #50bd6b;
+  line-height: 1.5em;
+}
+
+body h1 {
+  text-align: center;
+}
+
+body h2 {
+  line-height: 2em;
+}
+
+body .burger {
+  background-color: black;
+  font-size: 4em;
+  border-radius: 50%;
+  padding: 10px 5px;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+body .flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+}
+
+body .flexbox .first {
+  width: 30%;
+}
+
+body .flexbox .first h2 {
+  color: orange;
+}
+
+body .flexbox .first .content1 {
+  gap: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+  color: white;
+  height: 93%;
+}
+
+body .flexbox .second {
+  width: 30%;
+}
+
+body .flexbox .second h2 {
+  color: orange;
+}
+
+body .flexbox .second .content2 {
+  gap: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  color: black;
+  height: 93%;
+}
+
+body .flexbox .third {
+  width: 30%;
+}
+
+body .flexbox .third .content3 {
+  background-color: black;
+  color: orange;
+  height: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .flexbox .third .play {
+  line-height: 65vh;
+  color: white;
+  font-size: 15em;
+  text-align: center;
+}
+
+body .flexbox h3 {
+  color: orange;
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-top: 100px;
+  }
+  body .flexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .flexbox .first,
+  body .flexbox .second,
+  body .flexbox .third {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
